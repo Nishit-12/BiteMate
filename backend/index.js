@@ -12,9 +12,9 @@ const cors = require("cors");
 mongoDB();
 
 const corsOptions = {
-  origin: "https://bitemate.vercel.app/",
-  credentials: true, //access-control-allow-credentials:true
-  optionSuccessStatus: 200,
+  origin: ["https://bitemate.vercel.app/"],
+  methods: ["POST", "GET"],
+  credentials: true //access-control-allow-credentials:true
 };
 
 app.use(cors(corsOptions)); // Use this after the variable declaration
