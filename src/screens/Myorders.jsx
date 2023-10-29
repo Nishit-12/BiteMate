@@ -6,7 +6,7 @@ const Myorders = () => {
   const [orderData, setorderData] = useState([]);
 
   const fetchMyorders = async () => {
-    let response = await fetch("https://bite-mate-backend.vercel.app/myorderdata", {
+    let response = await fetch("https://bite-mate-backend.vercel.app/api/myorderdata", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

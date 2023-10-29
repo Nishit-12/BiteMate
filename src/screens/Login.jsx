@@ -16,7 +16,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const response = await fetch("https://bite-mate-backend.vercel.app/loginuser", {
+    const response = await fetch("https://bite-mate-backend.vercel.app/api/loginuser", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
