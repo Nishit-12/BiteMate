@@ -14,6 +14,7 @@ router.post("/getlocation", async (req, res) => {
       .then((axoisRes) => {
         let response = axoisRes.data.results[0].components;
         console.log(axoisRes.data.results[0].components);
+        console.log(response);
 
         let { city, state, country, postcode } = response;
         console.log(city,state,country,postcode);
