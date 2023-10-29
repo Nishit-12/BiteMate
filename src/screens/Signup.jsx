@@ -34,7 +34,9 @@ const Signup = () => {
 
     console.log(json);
 
-    if (!json.success) {
+    if (!json.error) {
+      toast.error("Use Diffrent Email-ID !");
+    } else if (!json.success) {
       toast.error("Enter Valid Credentials!");
     } else {
       setData({ username: "", email: "", password: "", location: "" });
