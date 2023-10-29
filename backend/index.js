@@ -12,7 +12,7 @@ const cors = require("cors");
 mongoDB();
 
 const corsOptions = {
-  origin: "https://bitemate.vercel.app/",
+  origin: "https://bite-mate-backend.vercel.app/",
   credentials: true, //access-control-allow-credentials:true
   optionSuccessStatus: 200,
 };
