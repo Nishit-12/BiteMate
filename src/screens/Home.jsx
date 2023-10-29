@@ -13,7 +13,7 @@ const Home = () => {
   const dispatch = useDispatchCart();
 
   const foodData = async () => {
-    let response = await fetch("http://localhost:8000/api/foodData", {
+    let response = await fetch("https://bite-mate-backend.vercel.app/api/foodData", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

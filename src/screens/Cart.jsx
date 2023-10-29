@@ -18,7 +18,7 @@ export default function Cart() {
   const handleCheckout = async () => {
     let userEmail = localStorage.getItem("userEmail");
 
-    let response = await fetch("http://localhost:8000/api/myorders", {
+    let response = await fetch("https://bite-mate-backend.vercel.app/api/myorders", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
