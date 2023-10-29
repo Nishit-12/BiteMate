@@ -1,7 +1,0 @@
-wXOoOAUnjXHSyBkq
-wXOoOAUnjXHSyBkq - Password
-
-"C:\Users\Admin\Downloads\foodData2.json"
-
-
-mongoimport --uri mongodb+srv://nishitpatel12261227:wXOoOAUnjXHSyBkq@cluster0.cajfnca.mongodb.net/biteMateMERN --collection food_items --jsonArray --file "C:\Users\Admin\Downloads\foodData2.json"
