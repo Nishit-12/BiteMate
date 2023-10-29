@@ -20,10 +20,17 @@ router.post(
     const salt = await bcrypt.genSalt(10);
     const securePassword = await bcrypt.hash(req.body.password, salt);
 
+    const existingUser = await User.findOne({ email: req.body.email });
+
     try {
       if (!errors.isEmpty()) {
         return res.status(400).json({ error: errors.array() });
       }
+
+      if (existingUser) {
+        return res.status(400).json({ error: false });
+      }
+      
       await User.create({
         name: req.body.name,
         location: req.body.location,
