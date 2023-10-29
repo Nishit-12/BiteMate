@@ -61,7 +61,7 @@ const Signup = () => {
 
     let [lat, long] = latlong;
 
-    const response = await fetch("http://localhost:8000/api/getlocation", {
+    const response = await fetch("https://bite-mate-backend.vercel.app/api/getlocation", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
