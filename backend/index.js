@@ -17,7 +17,7 @@ const corsOptions = {
   credentials: true //access-control-allow-credentials:true
 };
 
-app.use(cors(corsOptions)); // Use this after the variable declaration
+app.use(cors()); // Use this after the variable declaration
 
 app.get("/", (req, res) => {
   res.send("Hello World!");
