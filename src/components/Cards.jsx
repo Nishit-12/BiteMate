@@ -60,6 +60,7 @@ const Cards = (props) => {
 
     if (!authToken) {
       navigate("/login");
+      toast.error("You Must Have To Login First To Add The Items Into The Cart");
     } else {
       await dispatch({
         type: "ADD",
